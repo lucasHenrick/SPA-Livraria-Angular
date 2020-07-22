@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-title> Reservar Livro</mat-card-title>
+        <form>
+            
+            <mat-form-field>
+                <input matInput placeholder="Seu nome"  
+                    [(ngModel)]="reserva.nomeCliente"
+                    name="nomeCliente" 
+                    required
+                    >
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Data"  
+                [(ngModel)]="reserva.data"
+                    type="date"
+                    name="data" 
+                    required
+                    >
+            </mat-form-field>   
+            <mat-form-field>
+                <input matInput placeholder="Nome"  
+                [(ngModel)]="reserva.nomeLivro"
+                
+                name="nome_livro" 
+                disabled
+                required    >
+            </mat-form-field>
+            
+            
+         
+        </form>
+<button mat-raised-button (click)="reservarLivro()">
+   Reservar
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>

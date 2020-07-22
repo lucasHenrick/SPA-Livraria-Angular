@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Devolução</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome" 
+                    [value]="alugados.nomeLivro"
+                    name="nomeLivro" 
+                    disabled
+                    required>
+            </mat-form-field>
+        </form>
+        <button mat-raised-button (click)="deleteAlugados()">
+            Confirmar
+        </button>
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+</mat-card>
+       
+    

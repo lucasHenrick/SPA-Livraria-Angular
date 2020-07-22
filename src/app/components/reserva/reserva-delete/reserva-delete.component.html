@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>Cancelar Reserva</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome" 
+                    [value]="reserva.nomeLivro"
+                    name="nomeLivro" 
+                    disabled
+                    required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Data"
+                    [value]="reserva.data"
+                    name="data"
+                    disabled
+                    required>
+            </mat-form-field>
+        </form>
+        <button mat-raised-button (click)="deleteReserva()">
+            Confirmar
+        </button>
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+    
